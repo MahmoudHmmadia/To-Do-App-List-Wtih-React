@@ -1,0 +1,13 @@
+header {
+    margin-bottom: 50px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 40px;
+    font-weight: 900;
+    background: linear-gradient(90deg, #ffdd00 0%, #fbb034 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}

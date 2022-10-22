@@ -1,0 +1,70 @@
+.task {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: space-between;
+    background-color: #fff;
+    color: #333;
+    margin-bottom: 20px;
+    width: calc(100% - 50px);
+    margin-left: auto;
+    margin-right: auto;
+    background-color: transparent;
+    transition: .5s all ease;
+}
+
+.task.done {
+    opacity: .3;
+}
+
+.task p {
+    flex: 1;
+    font-size: 20px;
+    text-align: left;
+    padding: 5px 20px;
+    font-weight: bold;
+    background: linear-gradient(90deg, #ffdd00 0%, #fbb034 100%);
+    color: #050e31;
+}
+
+.task .controler {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.task button {
+    padding: 5px;
+    cursor: pointer;
+    border: none;
+    font-weight: bold;
+    color: #fff;
+    transition: .5s all ease;
+    border-radius: 8px;
+}
+
+.task button.delete {
+    background: linear-gradient(90deg, rgba(255, 35, 19, 1) 0%, rgba(241, 91, 91, 1) 100%);
+    background-clip: unset;
+    -webkit-background-clip: unset;
+    -webkit-text-fill-color: unset;
+}
+
+.task button.done {
+    background: linear-gradient(90deg, rgba(0, 108, 98, 1) 0%, rgba(76, 181, 171, 1) 100%);
+    background-clip: unset;
+    -webkit-background-clip: unset;
+    -webkit-text-fill-color: unset;
+}
+
+.task.done {
+    opacity: .5;
+}
+
+button.done:hover {
+    transform: scale(95%);
+}
+
+button.delete:hover {
+    transform: scale(95%);
+}
